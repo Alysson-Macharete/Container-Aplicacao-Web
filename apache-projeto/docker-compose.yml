@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  apache:
+    image: httpd
+    container_name: apache_projeto
+    ports: 
+    - 80:80
+    volumes:
+    - /data/projeto1:/usr/local/apache2/htdocs
